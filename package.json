@@ -1,0 +1,95 @@
+{
+  "name": "typescript-dojo",
+  "version": "1.0.0",
+  "description": "A starting point for kata using TypeScript and Jest",
+  "author": "Gaetan Maisse",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
+    "test:watch": "jest --watch",
+    "lint:eslint": "eslint -c .eslintrc.json --ext .ts src/",
+    "execute": "node dist/main.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.14",
+    "ts-node": "^8.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "commitizen": "^4.0.3",
+    "cz-emoji": "^1.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    },
+    "cz-emoji": {
+      "types": [
+        {
+          "emoji": "🌟",
+          "code": "feature: 🌟",
+          "description": "A new feature",
+          "name": "feature:"
+        },
+        {
+          "emoji": "🐛",
+          "code": "fix: 🐛",
+          "description": "A bug fix",
+          "name": "fix:"
+        },
+        {
+          "emoji": "🚓",
+          "code": "test: 🚓",
+          "description": "Testing improved with new or fixed tests",
+          "name": "test:"
+        },
+        {
+          "emoji": "🔩",
+          "code": "chore: 🔩",
+          "description": "Doesn't modify src or test files",
+          "name": "chore:"
+        },
+        {
+          "emoji": "✏️",
+          "code": "style: ✏️",
+          "description": "Doesn't affect the meaning of the code (white-space, semi-colons, etc)",
+          "name": "style:"
+        },
+        {
+          "emoji": "📚",
+          "code": "docs: 📚",
+          "description": "Documentation change",
+          "name": "docs:"
+        },
+        {
+          "emoji": "♻️",
+          "code": "refactor: ♻️",
+          "description": "Neither fixes a bug nor adds a feature",
+          "name": "refactor:"
+        },
+        {
+          "emoji": "⏪️",
+          "code": "revert: ️️⏪️",
+          "description": "Reverts a previous commit",
+          "name": "revert:"
+        }
+      ]
+    }
+  }
+}
